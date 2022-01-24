@@ -523,7 +523,7 @@ class _RenderInputPadding extends RenderShiftedBox {
       return true;
     }
     final Offset center = child!.size.center(Offset.zero);
-    return result.addWithRawTransform(
+    return result.addWithRawTransform(height : 0
       transform: MatrixUtils.forceToPoint(center),
       position: center,
       hitTest: (BoxHitTestResult result, Offset position) {
